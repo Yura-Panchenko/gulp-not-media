@@ -1,0 +1,79 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn {
+    display: inline-block;
+    padding: $btn-padding;
+    font-size: $btn-font-size;
+    text-align: center;
+    line-height: $btn-line-height;
+    vertical-align: top;
+    transition: all $animation-speed;
+
+    border: {
+        style: solid;
+        color: transparent;
+        width: $btn-border-width;
+        radius: $btn-border-radius;
+    }
+
+    &-default {
+        color: $btn-color-default;
+        background: $btn-background-default;
+        border-color: $btn-border-color-default;
+
+        &:hover {
+            color: $btn-hover-color-default;
+            background: $btn-hover-background-default;
+            border-color: $btn-hover-border-color-default;
+        }
+    }
+
+    &-primary {
+        color: $btn-color-primary;
+        background: $btn-background-primary;
+        border-color: $btn-border-color-primary;
+
+        &:hover {
+            color: $btn-hover-color-primary;
+            background: $btn-hover-background-primary;
+            border-color: $btn-hover-border-color-primary;
+        }
+    }
+
+    &-secondary {
+        color: $btn-color-secondary;
+        background: $btn-background-secondary;
+        border-color: $btn-border-color-secondary;
+
+        &:hover {
+            color: $btn-hover-color-secondary;
+            background: $btn-hover-background-secondary;
+            border-color: $btn-hover-border-color-secondary;
+        }
+    }
+
+    &-sm {
+        padding: $btn-padding-sm;
+        font-size: $btn-font-size-sm;
+        line-height: $btn-line-height-sm;
+        border-radius: $btn-border-radius-sm;
+    }
+
+    &-lg {
+        padding: $btn-padding-lg;
+        font-size: $btn-font-size-lg;
+        line-height: $btn-line-height-lg;
+        border-radius: $btn-border-radius-lg;
+    }
+}
+
+.btn-group {
+    margin: 0 -5px -10px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .btn {
+        margin: 0 5px 10px;
+    }
+}

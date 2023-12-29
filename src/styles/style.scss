@@ -1,0 +1,65 @@
+// @import 'base-wp/head-wp';
+// media breakpoints
+$xs-phone: 360px;
+$phone: 576px;
+$tablet: 768px;
+$desktop: 992px;
+$widescreen: 1200px;
+$xl: 1600px;
+
+// devices viewport width starts at:
+$breakpoints: (
+    xs-phone: 360px,
+    phone: 576px,
+    tablet: 768px,
+    desktop: 992px,
+    widescreen: 1200px,
+    xl: 1600px
+);
+
+// keywords
+$media-expressions: (
+    'screen': 'screen',
+    'print': 'print',
+    'handheld': 'handheld',
+    'landscape': '(orientation: landscape)',
+    'portrait': '(orientation: portrait)',
+    'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+    'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+// ligatured operators ≥ ≤
+
+// 1. Configuration and helpers
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+
+// 2. Vendors: include media mixins and mormalize imported from node_modules
+@import 'vendors/normalize';
+
+// 3. Base styles and elements
+@import 'base/base';
+@import 'base/helpers';
+@import 'base/fonts';
+@import 'base/typography';
+@import 'base/forms';
+@import 'base/web_accessibility';
+
+// base WP
+@import 'base-wp/cms-reset';
+@import 'base-wp/wp-reset';
+
+// 4. Layout-related sections
+@import 'layout/header';
+@import 'layout/common';
+@import 'layout/footer';
+
+// 5. Components
+@import 'components/button';
+
+// 6. Page-specific styles
+// @import 'pages/home';
+
+// 7. Themes
+// @import 'themes/themes';
