@@ -17,6 +17,12 @@
         radius: $btn-border-radius;
     }
 
+    @media (min-width: #{$tablet}) {
+        @media (max-width: #{$desktop}) {
+            display: block;
+        }
+    }
+
     &-default {
         color: $btn-color-default;
         background: $btn-background-default;
